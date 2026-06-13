@@ -1,0 +1,176 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar e Menu */
+        .navbar {
+             background: linear-gradient(135deg, #0f172a, #2563eb);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem 1.2rem;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #34495e;
+            border-radius: 4px;
+        }
+
+        /* Submenu (Área do Cliente) */
+        .dropdown:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+            list-style: none;
+            border-radius: 4px;
+            top: 100%;
+            left: 0;
+        }
+
+        .submenu a {
+            color: #333;
+            padding: 0.8rem 1rem;
+        }
+
+        .submenu a:hover {
+            background-color: #f1f1f1;
+            color: #1a252f;
+        }
+
+        /* Estilo do Início */
+        .hero {
+            background: url('../photo.jpg') no-repeat center center/cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Seções Gerais */
+        .section-container {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #1a252f;
+        }
+
+        /* Grade de Serviços */
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card-servico {
+            background: #fff;
+            padding: 2.5rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card-servico:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-servico h3 {
+            margin-bottom: 1rem;
+            color: #2980b9;
+        }
+
+        /* Contatos & Botões fale conosco */
+        .contato-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .btn-contato {
+            display: block;
+            padding: 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        
+        .btn-whatsapp { background: linear-gradient(135deg, #0f172a, #2563eb); }
+        .btn-instagram { background: linear-gradient(135deg, #0f172a, #2563eb); }
+        .btn-email { background: linear-gradient(135deg, #0f172a, #2563eb); }
+
+        /* Rodapé */
+        footer {
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
