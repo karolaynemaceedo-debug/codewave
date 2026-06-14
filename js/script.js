@@ -82,7 +82,7 @@ if (formLogin) { // Só roda se o formulário de login existir na página atual 
         const login = document.getElementById('login').value;
         const senha = document.getElementById('senha').value;
 
-        // Validação conforme os requisitos do projeto
+        // Validação conforme os requisitos 
         if (login.length === 6 && senha.length >= 8) { 
             alert("Login efetuado com sucesso! Bem-vindo à Codewave.");
             window.location.href = "form.html"; // Manda direto para o tela de formulário
