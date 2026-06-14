@@ -92,7 +92,7 @@ if (formLogin) { // Só roda se o formulário de login existir na página atual 
     });
 }
 
-// Salvar Cadastro
+// --- 5. SALVAR CADASTRO 
 function salvarCadastro(){
     let nome = document.getElementById('nome').value
     let nomeMaterno = document.getElementById('nomeMaterno').value
@@ -111,4 +111,17 @@ function salvarCadastro(){
    localStorage.setItem('endereco', endereco);
    localStorage.setItem('login', login);
    localStorage.setItem('senha', senha);
+}
+
+// MENSAGEM DE ENVIO DO FORMULÁRIO ---
+const formServico = document.getElementById('form-servico');
+
+if (formServico) { 
+    formServico.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        alert("Formulário enviado com sucesso! Nosso time de especialistas entrará em contato.");
+        formServico.reset(); 
+        window.location.href = "index.html"; 
+    });
 }
